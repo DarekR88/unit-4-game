@@ -1,0 +1,43 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <title>Crystal Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+</head>
+<body>
+    <div class="instructions">
+        <h1 class="theTitle">Crystal Collector</h1>
+        <h3>Instructions</h3>
+        <p>In this game you will be given a random number.</p>
+        <p>There are four crystals, each with random values.</p>
+        <p>By clicking on the crystals you will add to your Crystal Depository.</p>
+        <p>To win the game get your Crystal Depository value to match the random number without going over.</p>
+    </div>
+    <div class="theNumber">
+        <h4>Match this Number</h4>
+        <h4 id="number">0</h4>
+    </div>
+    <div id="crystals">
+        <button><img id="diamond" src="assets/images/diamond.jpg" class="gem"></button>
+        <button><img id="sapphire" src="assets/images/sapphire.jpg" class="gem"></button>
+        <button><img id="opal" src="assets/images/opal.jpg" class="gem"></button>
+        <button><img id="ruby" src="assets/images/ruby.jpg" class="gem"></button>
+    </div>
+    <div class="crysDepo">
+        <h4>Crystal Depository</h4>
+        <h4 id="crystalTotal">0</h4>
+    </div>
+    <div class="timesWon">  
+        <h4>Wins</h4>
+        <h4 id="win">0</h4>
+    </div>
+    <div class="timesLost">
+        <h4>Losses</h4>
+        <h4 id="loss">0</h4>
+    </div>    
+    <script src="assets/javascript/game.js"></script>
+</body>
+</html>
